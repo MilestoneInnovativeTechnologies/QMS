@@ -1,0 +1,26 @@
+{
+    "name": "milestone/qms",
+    "description": "Milestone Queue Management System",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "Milestone Innovative Technologies",
+            "email": "info@milestoneit.net"
+        }
+    ],
+    "require": {
+        "milestone/appframe": "^0.9.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Milestone\\QMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milestone\\QMS\\QMSServiceProvider"
+            ]
+        }
+    }
+}
