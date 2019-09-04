@@ -23,7 +23,7 @@ class ResourceFormFieldTableSeeder extends Seeder
             ->create([	'id' => '510105', 	'resource_form' => '509102', 	'name' => 'name', 	'type' => 'text', 	'label' => 'Name', 											])
             ->create([	'id' => '510106', 	'resource_form' => '509102', 	'name' => 'phone', 	'type' => 'text', 	'label' => 'Phone', 											])
             ->create([	'id' => '510107', 	'resource_form' => '509102', 	'name' => 'login', 	'type' => 'text', 	'label' => 'Login', 											])
-            ->create([	'id' => '510108', 	'resource_form' => '509102', 	'name' => 'email', 	'type' => 'text', 	'label' => 'Email', 											])
+            ->create([	'id' => '510108', 	'resource_form' => '509102', 	'name' => 'password', 	'type' => 'password', 	'label' => 'Password', 											])
             ->create([	'id' => '510109', 	'resource_form' => '509103', 	'name' => 'name', 	'type' => 'text', 	'label' => 'Name', 											])
             ->create([	'id' => '510110', 	'resource_form' => '509103', 	'name' => 'display_name', 	'type' => 'text', 	'label' => 'Display Name', 											])
             ->create([	'id' => '510111', 	'resource_form' => '509103', 	'name' => 'status', 	'type' => 'select', 	'label' => 'Status', 											])
@@ -31,9 +31,8 @@ class ResourceFormFieldTableSeeder extends Seeder
             ->create([	'id' => '510113', 	'resource_form' => '509104', 	'name' => 'phone', 	'type' => 'text', 	'label' => 'Phone', 											])
             ->create([	'id' => '510114', 	'resource_form' => '509104', 	'name' => 'email', 	'type' => 'text', 	'label' => 'Email', 											])
             ->create([	'id' => '510115', 	'resource_form' => '509105', 	'name' => 'category', 	'type' => 'select', 	'label' => 'Category', 											])
-            ->create([	'id' => '510116', 	'resource_form' => '509105', 	'name' => 'datetime', 	'type' => 'text', 	'label' => 'Datetime', 											])
-            ->create([	'id' => '510117', 	'resource_form' => '509105', 	'name' => 'customer', 	'type' => 'select', 	'label' => 'Customer', 											])
-            ->create([	'id' => '510118', 	'resource_form' => '509105', 	'name' => 'status', 	'type' => 'select', 	'label' => 'Status', 											])
+            ->create([	'id' => '510116', 	'resource_form' => '509105', 	'name' => 'customer', 	'type' => 'select', 	'label' => 'Customer', 											])
+            ->create([	'id' => '510117', 	'resource_form' => '509105', 	'name' => 'status', 	'type' => 'select', 	'label' => 'Status', 											])
         ;
         \DB::statement('set foreign_key_checks = ' . $_);
     }

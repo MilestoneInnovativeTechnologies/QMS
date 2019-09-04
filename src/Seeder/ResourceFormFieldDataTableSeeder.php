@@ -23,7 +23,7 @@ class ResourceFormFieldDataTableSeeder extends Seeder
             ->create([	'id' => '511105', 	'form_field' => '510105', 	'attribute' => 'name', 													])
             ->create([	'id' => '511106', 	'form_field' => '510106', 	'attribute' => 'phone', 													])
             ->create([	'id' => '511107', 	'form_field' => '510107', 	'attribute' => 'login', 													])
-            ->create([	'id' => '511108', 	'form_field' => '510108', 	'attribute' => 'email', 													])
+            ->create([	'id' => '511108', 	'form_field' => '510108', 	'attribute' => 'password', 													])
             ->create([	'id' => '511109', 	'form_field' => '510109', 	'attribute' => 'name', 													])
             ->create([	'id' => '511110', 	'form_field' => '510110', 	'attribute' => 'display_name', 													])
             ->create([	'id' => '511111', 	'form_field' => '510111', 	'attribute' => 'status', 													])
@@ -31,9 +31,8 @@ class ResourceFormFieldDataTableSeeder extends Seeder
             ->create([	'id' => '511113', 	'form_field' => '510113', 	'attribute' => 'phone', 													])
             ->create([	'id' => '511114', 	'form_field' => '510114', 	'attribute' => 'email', 													])
             ->create([	'id' => '511115', 	'form_field' => '510115', 	'attribute' => 'category', 													])
-            ->create([	'id' => '511116', 	'form_field' => '510116', 	'attribute' => 'datetime', 													])
-            ->create([	'id' => '511117', 	'form_field' => '510117', 	'attribute' => 'customer', 													])
-            ->create([	'id' => '511118', 	'form_field' => '510118', 	'attribute' => 'status', 													])
+            ->create([	'id' => '511116', 	'form_field' => '510116', 	'attribute' => 'customer', 													])
+            ->create([	'id' => '511117', 	'form_field' => '510117', 	'attribute' => 'status', 													])
         ;
         \DB::statement('set foreign_key_checks = ' . $_);
     }

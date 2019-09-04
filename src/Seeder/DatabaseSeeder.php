@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ResetDatabaseSeeder::class,
 
-            UserTableSeeder::class,
-            GroupTableSeeder::class,
-            GroupUserTableSeeder::class,
+//            UserTableSeeder::class,
+//            GroupTableSeeder::class,
+//            GroupUserTableSeeder::class,
             RoleTableSeeder::class,
             GroupRoleTableSeeder::class,
             ResourceTableSeeder::class,
@@ -60,13 +60,13 @@ class DatabaseSeeder extends Seeder
             ResourceDashboardSectionTableSeeder::class,
             ResourceDashboardSectionItemTableSeeder::class,
 
-            CategoryTableSeeder::class,
+            /*CategoryTableSeeder::class,
             UserCategoryTableSeeder::class,
             CounterTableSeeder::class,
             CounterUserTableSeeder::class,
             CustomerTableSeeder::class,
             TokenTableSeeder::class,
-            TokenCounterTableSeeder::class,
+            TokenCounterTableSeeder::class,*/
         ]);
     }
 }

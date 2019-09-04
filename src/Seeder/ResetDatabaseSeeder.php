@@ -13,9 +13,9 @@ class ResetDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \DB::statement('DELETE FROM users WHERE id > 500100');\DB::statement('ALTER TABLE `users` AUTO_INCREMENT=1');
-        \DB::statement('DELETE FROM __groups WHERE id > 501100');\DB::statement('ALTER TABLE `__groups` AUTO_INCREMENT=1');
-        \DB::statement('DELETE FROM __group_users WHERE id > 502100');\DB::statement('ALTER TABLE `__group_users` AUTO_INCREMENT=1');
+//        \DB::statement('DELETE FROM users WHERE id > 500100');\DB::statement('ALTER TABLE `users` AUTO_INCREMENT=1');
+//        \DB::statement('DELETE FROM __groups WHERE id > 501100');\DB::statement('ALTER TABLE `__groups` AUTO_INCREMENT=1');
+//        \DB::statement('DELETE FROM __group_users WHERE id > 502100');\DB::statement('ALTER TABLE `__group_users` AUTO_INCREMENT=1');
         \DB::statement('DELETE FROM __roles WHERE id > 503100');\DB::statement('ALTER TABLE `__roles` AUTO_INCREMENT=1');
         \DB::statement('DELETE FROM __group_roles WHERE id > 504100');\DB::statement('ALTER TABLE `__group_roles` AUTO_INCREMENT=1');
         \DB::statement('DELETE FROM __resources WHERE id > 505100');\DB::statement('ALTER TABLE `__resources` AUTO_INCREMENT=1');
@@ -55,9 +55,9 @@ class ResetDatabaseSeeder extends Seeder
         \DB::statement('DELETE FROM __resource_dashboard WHERE id > 539100');\DB::statement('ALTER TABLE `__resource_dashboard` AUTO_INCREMENT=1');
         \DB::statement('DELETE FROM __resource_dashboard_sections WHERE id > 540100');\DB::statement('ALTER TABLE `__resource_dashboard_sections` AUTO_INCREMENT=1');
         \DB::statement('DELETE FROM __resource_dashboard_section_items WHERE id > 541100');\DB::statement('ALTER TABLE `__resource_dashboard_section_items` AUTO_INCREMENT=1');
-        \DB::statement('ALTER TABLE `users`  AUTO_INCREMENT=500101');
-        \DB::statement('ALTER TABLE `__groups`  AUTO_INCREMENT=501101');
-        \DB::statement('ALTER TABLE `__group_users`  AUTO_INCREMENT=502101');
+//        \DB::statement('ALTER TABLE `users`  AUTO_INCREMENT=500101');
+//        \DB::statement('ALTER TABLE `__groups`  AUTO_INCREMENT=501101');
+//        \DB::statement('ALTER TABLE `__group_users`  AUTO_INCREMENT=502101');
         \DB::statement('ALTER TABLE `__roles`  AUTO_INCREMENT=503101');
         \DB::statement('ALTER TABLE `__group_roles`  AUTO_INCREMENT=504101');
         \DB::statement('ALTER TABLE `__resources`  AUTO_INCREMENT=505101');

@@ -14,7 +14,9 @@ class AddLoginFieldToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('phone',191)->after('email')->nullable();
             $table->string('login',191)->after('email')->nullable()->index();
+            $table->string('email',191)->nullable()->change();
         });
     }
 
@@ -26,7 +28,7 @@ class AddLoginFieldToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->dropColumn(['phone','login']);
         });
     }
 }
